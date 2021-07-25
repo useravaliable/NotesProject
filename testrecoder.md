@@ -38,3 +38,48 @@
 ### cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2
 ### yarn install
 ---
+
+
+
+
+
+
+markdown 学习
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
+##水平线
+---
+***
+___
+
+**文本样式**
+__22222222__
+*1111111111*
+_1111111111_
+~~12345678~~
+
+* 123
++ 123
+- 123无序列表
+
+1. 123
+2. 123
+3. 123有序列表
+
+Include `代码`
+
+   //some code
+   line 1
+   line 2
+
+```
+some text
+```
+
+
+
