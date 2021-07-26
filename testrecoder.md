@@ -35,7 +35,7 @@
 ---
 ## 测试启动
 ### cd rails_auth
-### bin/vite [^error]。
+### bin/vite `[^error]`。
 ### bin/rails s
 ---
 
