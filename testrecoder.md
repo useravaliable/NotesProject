@@ -31,8 +31,8 @@
 ### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
 ---
 ## 迁移数据库
----
 ### rake db:migrate
+---
 ## 测试启动
 ### cd rails_auth
 ### bin/vite [^error]
