@@ -36,7 +36,6 @@
 ## 测试启动
 ### cd rails_auth
 ### bin/vite [^error]
-[^error]:bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
 ### bin/rails s
 ---
 
@@ -52,14 +51,15 @@
 
 
 
-## 怎样查看错误
-### 在浏览器查看错误
+## 怎样查看test测试错误
+### 可以在浏览器测试目录中找到并查看其错误
 ---
-## 如何测试文件
-### 命令行内运行bin/rails test test文件
+## 如何进行项目的测试
+### 进入项目主目录rails_auth/下运行 
+### bin/rails test 测试文件夹目录|文件名±：行数
 ---
 ## 怎样查看路由
-### cd rails_auth/
+### 进入项目主目录 rails_auth/下运行
 ### rails routes | grep test
 ---
 
@@ -71,46 +71,10 @@
 ---
 
 ## mvc概念
-### view视图+models模型+controllers控制器
+### view视图
+### models模型
+### controllers控制器
 
----
-## rails_auth项目
----
-## 下载项目:
----
-### git clone https://github.com/work-design/rails_auth.git
----
-## 初始化
----
-### 进入项目主目录
-### cd rails_auth/
----
-### 安装bundle
-### bundle install
----
-### 安装yarn
-### yarn install
----
-### 下载项目子模块
-### git submodule update --init
----
-### 进入测试文件夹下的dummy目录
-### cd test/dummy/
----
-### 安装yarn
-### yarn install
----
-### 复制`重要`文件至指定目录下
-### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
----
-## 迁移数据库
----
-### rake db:migrate
-## 测试启动
-### cd rails_auth
-### bin/vite
-### bin/rails s
----
 
 [隐藏内容](file:///Users/qmy/dong/dong/trask/error.txt)
 
@@ -151,3 +115,7 @@ Include `代码`
 ```
 some text
 ```
+
+
+
+[^error]:bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
