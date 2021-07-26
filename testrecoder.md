@@ -35,8 +35,8 @@
 ### rake db:migrate
 ## 测试启动
 ### cd rails_auth
-### bin/vite [^错误]
-[^错误]:bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
+### bin/vite [^error]
+[^error]:bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
 ### bin/rails s
 ---
 
