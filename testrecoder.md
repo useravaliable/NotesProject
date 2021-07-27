@@ -45,13 +45,40 @@
 
 
 
+## 项目rails_com
+### 下载项目
+#### git clone git@github.com:work-design/rails_com.git
+### 安装配置文件
+### 进入目录
+#### cd ~/dong/rails_com/
+#### bundle install
+#### cd test/dummy
+#### git submodule update --init
+#### bundle install
+#### yarn install
+### 复制文件
+#### 复制`重要`文件至指定目录下
+#### 注意:development.key   development.yml.enc都是rails_auth下的
+#### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
+#### error:若文件移动错了,改后需要执行bin/rails credentials:show --environment development
+
+```bin/vite出现错误：No such file or directory @ rb_sysopen - log/not_found.log```
+#### cd ~/dong/rails_com/test/dummy/node_modules/viter/
+#### yarn install
+#### cd ~/dong/rails_com/test/dummy/node_modules/postcss-discard-overridden/
+#### yarn install
+#### bundle exec rake db:migrate
+#### 重要*rake db:migrate
 
 
 
 
 
-
-
+### 测试
+### cd ~/dong/rails_com/
+### bin/rails s
+### cd ~/dong/rails_com/test/dummy/
+### bin/vite
 
 
 ## *怎样查看test测试错误
@@ -126,4 +153,4 @@ some text
 ~~~
 <!--bin/rails credentials:show --environment development  环境显示 保存-->
 
-###[^error]: bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
+[隐藏](###[^error]: bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install)
