@@ -28,7 +28,10 @@
 ### bundle install
 ---
 ### 复制`重要`文件至指定目录下
+### 注意:development.key   development.yml.enc是rails_auth下的
 ### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
+### error:文件移动错了,改后需要执行bin/rails credentials:show --environment development
+
 ---
 ## 迁移数据库
 ### rake db:migrate
@@ -51,34 +54,39 @@
 
 
 
-## 怎样查看test测试错误
-### 可以在浏览器测试目录中找到并查看其错误
+## *怎样查看test测试错误
+###   *可以在浏览器测试目录中找到并查看其错误
 ---
-## 如何进行项目的测试
-### 进入项目主目录rails_auth/下运行 
-### bin/rails test 测试文件夹目录|文件名±：行数
+## *如何进行项目的测试
+###   *进入项目主目录rails_auth/下运行 
+###   *bin/rails test 测试文件夹目录|文件名±：行数
 ---
-## 怎样查看路由
-### 进入项目主目录 rails_auth/下运行
-### rails routes | grep test
----
-
-## 测试时要注意的小bug
-### 写代码时要注意格式如‘，’后加空格
-### 在进行git提交时使用Git status
-### 查看是否多出来一些文件，污染了git项目
-### ps:
+## *怎样查看路由
+###   *进入项目主目录 rails_auth/下运行
+###   *rails routes | grep test
 ---
 
-## mvc概念
-### view视图
-### models模型
-### controllers控制器
+## *测试时要注意的小bug
+###   *写代码时要注意格式如‘，’后加空格
+###   *在进行git提交时使用Git status
+###   *查看是否多出来一些文件，污染了git项目
+###   *ps:
+---
+
+## *mvc概念
+###   *view视图
+###   *models模型
+###   *controllers控制器
 
 
 [隐藏内容](file:///Users/qmy/dong/dong/trask/error.txt)
 
 
+
+
+
+
+~~~
 ### markdown 学习
 # h1
 ## h2
@@ -115,7 +123,7 @@ Include `代码`
 ```
 some text
 ```
-
-
+~~~
+<!--bin/rails credentials:show --environment development  环境显示 保存-->
 
 ###[^error]: bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install
