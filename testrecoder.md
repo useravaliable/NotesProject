@@ -111,9 +111,35 @@
 
 
 
-
-
+**加粗**
+*倾斜*
+> 段落
+1. ordered list
+2. ordered list
+- unordered list
+- unordered list
+- unordered list
+`code`
+![文字](image.jpg)
 ~~~
+```
+{
+  "": ""
+  "": ""
+}
+
+term
+: definition
+wait a note. [^1]
+[^1]: the is note
+
+|表标题1|表标题2|
+|-------|-------|
+|内容1|内容2|
+|内容3|内容4|
+
+```
+
 ### markdown 学习
 # h1
 ## h2
@@ -131,7 +157,8 @@ ___
 __22222222__
 *1111111111*
 _1111111111_
-~~12345678~~
+~~删除框~~
+ - [] 选择框
 
 * 123
 + 123
