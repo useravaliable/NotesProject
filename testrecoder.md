@@ -83,10 +83,10 @@
     * 复制`重要`文件至指定目录下
     * 注意:development.key   development.yml.enc都是rails_auth下的
     * 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
-    + 在rails_com/下执行bin/rails credentials:show --environment development
+    * 在rails_com/下执行bin/rails credentials:show --environment development
     * ps:若文件移动错了,改后需要执行bin/rails credentials:show --environment development
 ---
-    + cd rails_com/test/dummy/bin
+    * cd rails_com/test/dummy/bin
     * 执行命令bundle exec rake db:migrate
     * rake db:migrate
 ---
