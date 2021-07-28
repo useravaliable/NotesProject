@@ -81,29 +81,29 @@
 ### bin/vite
 
 
-## *怎样查看test测试错误
-###   *可以在浏览器测试目录中找到并查看其错误
+## * 怎样查看test测试错误
+###   * 可以在浏览器测试目录中找到并查看其错误
 ---
-## *如何进行项目的测试
-###   *进入项目主目录rails_auth/下运行 
-###   *bin/rails test 测试文件夹目录|文件名±：行数
+## * 如何进行项目的测试
+###   * 进入项目主目录rails_auth/下运行 
+###   * bin/rails test 测试文件夹目录|文件名±：行数
 ---
-## *怎样查看路由
-###   *进入项目主目录 rails_auth/下运行
-###   *rails routes | grep test
----
-
-## *测试时要注意的小bug
-###   *写代码时要注意格式如‘，’后加空格
-###   *在进行git提交时使用Git status
-###   *查看是否多出来一些文件，污染了git项目
-###   *ps:
+## * 怎样查看路由
+###   * 进入项目主目录 rails_auth/下运行
+###   * rails routes | grep test
 ---
 
-## *mvc概念
-###   *view视图
-###   *models模型
-###   *controllers控制器
+## * 测试时要注意的小bug
+###   * 写代码时要注意格式如‘，’后加空格
+###   * 在进行git提交时使用Git status
+###   * 查看是否多出来一些文件，污染了git项目
+###   * ps:
+---
+
+## * mvc概念
+###   * view视图
+###   * models模型
+###   * controllers控制器
 
 
 [隐藏内容](file:///Users/qmy/dong/dong/trask/error.txt)
@@ -122,15 +122,16 @@
 `code`
 ![文字](image.jpg)
 ~~~
-```
-{
-  "": ""
-  "": ""
-}
 
-term
+``` 
+{
+  "error1": "1"
+  "error2": "2"
+}
+```
+termerror
 : definition
-wait a note. [^1]
+wait a error note. [^1]
 [^1]: the is note
 
 |表标题1|表标题2|
