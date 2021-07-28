@@ -1,88 +1,103 @@
-# 创建项目：
-## rails_auth项目
+## 创建项目：
+### rails_auth项目
 ---
-## 下载项目:
-### git clone https://github.com/work-design/rails_auth.git
+* 下载项目:
+   * git clone https://github.com/work-design/rails_auth.git
 ---
-## 初始化
+* 初始化
 ---
-### 进入项目主目录
-### cd rails_auth/
+* 进入项目主目录
+  + cd rails_auth/
 ---
-### 安装bundle
-### bundle install
+* 安装bundle
+  + bundle install
 ---
-### 安装yarn
-### yarn install
+* 安装yarn
+  + yarn install
 ---
-### 下载项目子模块
-### git submodule update --init
+* 下载项目子模块
+  + git submodule update --init
 ---
-### 进入测试文件夹下的dummy目录
-### cd test/dummy/
----
-### 安装yarn
-### yarn install
----
-### 安装bundle
-### bundle install
----
-### 复制`重要`文件至指定目录下
-### 注意:development.key   development.yml.enc是rails_auth下的
-### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
-### error:文件移动错了,改后需要执行bin/rails credentials:show --environment development
-
----
-## 迁移数据库
-### rake db:migrate
----
-## 测试启动
-### cd rails_auth
-### bin/vite `[^error]`。
-### bin/rails s
+* 进入项目测试文件夹下的dummy目录
+  + `cd rails_auth/test/dummy/`
+  * 执行命令 find . -name '*.lock'
+  + 具有Gemfile.lock的目录执行 `bundle install`
+  + 具有yarn.lock的目录执行`yarn install`
 ---
 
+* 复制`重要文件`至指定目录下
+  + 注意:所有的development.key、development.yml.enc来自rails_auth下
+  + 复制文件development.yml.enc和test.yml.enc到 rails_auth/test/dummy/config/credentials目录下
+  + 在rails_com/目录下执行命令`bin/rails credentials:show --environment development`
+    + ps:若文件移动错目录了,改后重新执行bin/rails credentials:show --environment development
+---
+* 迁移数据库
+  + rake db:migrate
+    * 报错 则 bundle exec rake db:migrate 再次执行 rake db:migrate
+---
+* 测试启动
+  * 1shell
 
+  + cd rails_auth
+  + bin/vite
 
+  * 2shell
+  + bin/rails s
 
-## 项目rails_com
-### 下载项目
-#### git clone git@github.com:work-design/rails_com.git
-### 安装配置文件
-### 进入目录
-#### cd ~/dong/rails_com/
-#### bundle install
-#### cd test/dummy
-#### git submodule update --init
-#### bundle install
-#### yarn install
-### 复制文件
-#### 复制`重要`文件至指定目录下
-#### 注意:development.key   development.yml.enc都是rails_auth下的
-#### 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
-#### error:若文件移动错了,改后需要执行bin/rails credentials:show --environment development
-
-```bin/vite出现错误：No such file or directory @ rb_sysopen - log/not_found.log```
-#### cd ~/dong/rails_com/test/dummy/node_modules/viter/
-#### yarn install
-#### cd ~/dong/rails_com/test/dummy/node_modules/postcss-discard-overridden/
-#### yarn install
-#### bundle exec rake db:migrate
-#### 重要*rake db:migrate
+* 打开谷歌浏览器
+  + 地址栏输入localhost:3000
+  + 出现非404页面即可成功
+---
 
 
 
 
+### 项目rails_com
+---
+  + 下载项目
+    * git clone git@github.com:work-design/rails_com.git
+---
+  + 安装配置文件
+  + 进入项目主目录
+    * cd rails_com/
+  + 安装bundle
+    * bundle install
+  + 安装yarn
+    * yarn install
+  + 安装子模块
+    * git submodule update --init
+  * 进入项目测试文件夹下的dummy目录
+    + `cd rails_com/test/dummy/`
+    * 执行命令 find . -name '*.lock'
+    + 具有Gemfile.lock的目录执行 `bundle install`
+    + 具有yarn.lock的目录执行`yarn install`
+---
+  + 复制文件
+    * 复制`重要`文件至指定目录下
+    * 注意:development.key   development.yml.enc都是rails_auth下的
+    * 复制文件development.yml.enc和test.yml.enc 到 test/dummy/config/credentials目录下
+    + 在rails_com/下执行bin/rails credentials:show --environment development
+    * ps:若文件移动错了,改后需要执行bin/rails credentials:show --environment development
 
-### 测试
-### cd ~/dong/rails_com/
-### bin/rails s
-### cd ~/dong/rails_com/test/dummy/
-### bin/vite
+    + cd rails_com/test/dummy/bin
+    * 执行命令bundle exec rake db:migrate
+    * rake db:migrate
+---
+* 测试
+  + 1shell
+    * cd ~/dong/rails_com/
+    * bin/rails s
+  + 2shell
+    * cd ~/dong/rails_com/test/dummy/
+    * bin/vite
 
-
+* 打开谷歌浏览器
+  + 地址栏输入localhost:3000
+  + 出现非404页面即可成功
+---
+## 注释
  * 怎样查看test测试错误
-   * 可以在浏览器测试目录中找到并查看其错误
+   * 可以在浏览器localhost:3000/+测试目录中找到并查看其错误
 ---
  * 如何进行项目的测试
    * 进入项目主目录rails_auth/下运行 
@@ -105,9 +120,18 @@
    * controllers控制器
 
 
+
+
+
+
 [隐藏内容](file:///Users/qmy/dong/dong/trask/error.txt)
 
-
+##错误：
+```bin/vite出现错误：No such file or directory @ rb_sysopen - log/not_found.log```
+  * cd rails_com/test/dummy/node_modules/viter/
+  * yarn install
+  * cd rails_com/test/dummy/node_modules/postcss-discard-overridden/
+  * yarn install
 
 
 **加粗**
@@ -128,9 +152,9 @@
   "error2": "2"
 }
 ```
-termerror
-: definition
-wait a error note. [^1]
+~~~ termerror ~~~
+~~~: definition~~~
+~~~wait a error note. [^1]~~~
 [^1]: the is note
 
 |表标题1|表标题2|
@@ -178,6 +202,3 @@ Include `代码`
 some text
 ```
 ~~~
-<!--bin/rails credentials:show --environment development  环境显示 保存-->
-
-[隐藏](https://###[^error]: bin/vite遇到如下错误时：error when starting dev server: Error: The following dependencies are imported but could not be resolved:   cd /Users/qmy/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/bundler/gems/rails_ui-bd2433c8d9a2      yarn install)
