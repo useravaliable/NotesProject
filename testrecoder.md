@@ -86,9 +86,9 @@
     * 在rails_com/下执行bin/rails credentials:show --environment development
     * ps:若文件移动错了,改后需要执行bin/rails credentials:show --environment development
 ---
-    * cd rails_com/test/dummy/bin
-    * 执行命令bundle exec rake db:migrate
-    * rake db:migrate
+    * `cd rails_com/test/dummy/bin`
+    * 执行命令`bundle exec rake db:migrate`
+    * `rake db:migrate`
 ---
 * 测试
   + 1shell
