@@ -172,7 +172,7 @@
 - unordered list
 - unordered list
 `code`
-![文字](image.jpg)
+* ![文字](image.jpg)
 ~~~
 
 {
