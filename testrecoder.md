@@ -101,6 +101,28 @@
 * 打开谷歌浏览器
   + 地址栏输入localhost:3000
   + 出现非404页面即可成功
+
+
+
+
+* test rb文件基本格式
+  + `require 'test_helper'`
+  + `class XXXTest < XXX::XXXCase`
+    * `test "" do`
+      * `code`
+      * `assert_***  * *`
+      * end
+    * end
+
+
+
+
+
+
+
+
+
+
 ---
 ## 注释
  * 怎样查看test测试错误
