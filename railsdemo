@@ -1,0 +1,85 @@
+rails入门
+
+学习条件如下
+ruby版本2.2.2
+开发工具包
+包管理工具rubygems
+
+
+rails简介
+rails是使用ruby语言编写的web应用开发框架，目的是解决快速开发中的共通问题。简化web应用的开发。
+dry
+多约定少配置
+
+ruby -v
+sqlite3 --version
+gem install rails
+rails --version
+
+项目文件夹介绍
+app/ 包含应用的控制器、模型、视图、辅助方法、邮件程序、频道、作业和静态资源文件
+bin/ 启动应用的rails脚本 安装更新部署运行应用的其他脚本
+config/ 应用的路由、数据库等
+config.ru rack服务器的rack配置，用于启动脚本
+db/ 当前数据库的模式 以及数据库迁移文件
+gemfile
+gemfile。lock  gem依赖 
+lib 应用拓展模块
+log/ 应用日志文件
+public 可直接访问的文件夹 静态文件和编译后的静态资源文件
+rakefile 定位并加载命令行中执行的任务
+readme。md 应用的自述文件
+test/ 单元测试 固件和其他测试装置
+tmp/ 临时文件
+vender/ 第三方代码
+
+创建新项目
+bin/rails new sss
+
+启动命令
+bin/rails server
+
+控制器生成器
+bin/rails generate controller welcome index
+
+
+路由控制
+config/routes.rb
+get ‘’//请求应该发往 控制器的某 动作
+root ‘’//对根路径的访问请求发往  控制器的 。。 动作
+resources 声明标准的rest资源
+
+app/controllers/articles_controller.rb
+def new
+end
+
+app/views/articles/new.html.erb 
+form_for 辅助创建
+
+render params【】。inspect
+
+app/controllers/comments_controller.rb comments 控制器文件
+app/views/comments/ 控制器视图
+test/controllers/comments_controller_test.rb 测试文件
+app/helpers/comments_helper.rb 辅助方法帮助文件
+app/assets/javascripts/comments.coffee coffeescript文件
+app/assets/stylesheets/comments.scss 样式表文件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
