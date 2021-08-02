@@ -44,9 +44,20 @@
     * `cd rails_com/test/dummy/`
     * `bin/vite`
 
+
+
+
+
 * 打开谷歌浏览器
   + 地址栏输入localhost:3000
   + 出现非404页面即可成功
 
+
+测试模块：
+bin/rails routes
+
+n行
+name get /auth/board/:id  /auth/board#new
+     协议       路径               控制器
 
 
